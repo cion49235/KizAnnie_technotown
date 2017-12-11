@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="annie.kiz.view.technotown"
+    android:versionCode="3"
+    android:versionName="1.0.3" 
+    android:installLocation="auto">
+    <uses-sdk android:minSdkVersion="7"/>
+
+    <application
+        android:name="annie.kiz.view.technotown.favorite.ModApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon128"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:launchMode="singleTask"
+        android:theme="@style/Theme.Favorite">
+        
+         <activity
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden|stateVisible|adjustPan"
+            android:name="annie.kiz.view.technotown.activity.MainActivity"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+	        android:name="annie.kiz.view.technotown.activity.SubActivity" 
+	        android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        
+        <activity 
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+	        android:name="annie.kiz.view.technotown.activity.FavoriteActivity" 
+	        android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        
+        <activity 
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+	        android:name="annie.kiz.view.technotown.mediaplayer.ContinueMediaPlayer"
+	        android:hardwareAccelerated="true" 
+	        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        
+        <activity 
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+	        android:name="annie.kiz.view.technotown.videoplayer.CustomVideoPlayer"
+	        android:hardwareAccelerated="true" 
+	        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        
+        <activity 
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+	        android:name="annie.kiz.view.technotown.youtubeplayer.CustomYoutubePlayer"
+	        android:hardwareAccelerated="true" 
+	        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        
+        
+        <!-- <Favorite_Activities> -->
+        
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.NoActionBar" >
+        </activity>
+        
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.main"
+            android:icon="@drawable/ic_launcher_simple"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.info"
+            android:icon="@drawable/ic_launcher_simple"
+            android:label="@string/app_info" />
+        
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.setting"
+            android:icon="@drawable/ic_launcher_simple"
+            android:label="@string/setting" />
+        
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.GalleryView"
+            android:icon="@drawable/ic_launcher_simple"
+            android:label="@string/photo" />
+        
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.page.ProfileActivity"
+            android:icon="@drawable/ic_launcher_simple"
+            android:label="@string/app_name" 
+            android:theme="@style/AppTheme.TranslucentActionBar"/>
+        
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.page.ProfileEdit"
+            android:icon="@drawable/ic_launcher_simple"
+            android:label="@string/edit_profile" />
+        
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.page.ProfileInfo"
+            android:icon="@drawable/ic_launcher_simple"
+            android:label="@string/user_info" />
+                        
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.page.privacy_category"
+            android:icon="@drawable/ic_launcher_simple"
+            android:label="@string/privacy_content" />
+
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.page.page_create"
+            android:icon="@drawable/ic_launcher_simple"
+            android:label="@string/create_page" />
+                     
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.page.document_write"
+            android:icon="@drawable/ic_launcher_simple"
+            android:label="@string/write" />
+                     
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.page.document_read"
+            android:icon="@drawable/ic_launcher_simple"
+            android:label="@string/app_name" />
+        
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.start.welcome"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.NoActionBar" />
+        
+        <activity
+            android:name="annie.kiz.view.technotown.tarks_account_login"
+            android:icon="@drawable/tarks_white"
+            android:label="@string/tarks_account"
+            android:theme="@style/Theme.Sherlock" />
+        
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.start.join"
+            android:icon="@drawable/ic_launcher_simple"
+            android:label="@string/sign_up" />
+        
+        <activity
+            android:name="annie.kiz.view.technotown.favorite.CropManager"
+            android:icon="@drawable/ic_launcher_simple"
+            android:label="@string/cut_image" />
+        
+        <!-- For Admob -->
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+    
+        <receiver android:name="kr.co.inno.autocash.RestartReceiver"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="RestartReceiver.restart" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        
+        <service android:name="kr.co.inno.autocash.service.AutoServiceActivity"/>
+        <service android:name="kr.co.inno.autocash.service.AutoCompleteServiceActivity"/>
+        <service android:name="kr.co.inno.autocash.service.AutoWebviewServiceActivity"/>
+        <!-- 자동 로그인 서비스 추가 -->
+        <service android:name="kr.co.inno.autocash.service.AutoLoginServiceActivity"/>
+        
+        <receiver android:name="kr.co.inno.autocash.service.receiver.AutoEditPackageReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+		
+		<!-- GCM receiver-->
+    	<receiver
+			android:name="com.google.android.gcm.GCMBroadcastReceiver"
+			android:permission="com.google.android.c2dm.permission.SEND" >
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category android:name="annie.kiz.view.technotown" />
+			</intent-filter>
+			<!-- Receive the registration id -->
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+				<category android:name="annie.kiz.view.technotown" />
+			</intent-filter>
+		</receiver>
+		<!-- GCM receiver-->
+		
+    	<!-- GCM 리시버에서 돌리는 서비스 -->
+		<service android:name="annie.kiz.view.technotown.GCMIntentService" /><!-- 서비스명 변경하면 안됨 -->
+    </application>
+    
+    <!-- T-Ad -->
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<!--<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />-->
+	<!-- ShallWeAd -->
+	<!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+	<!-- Culay -->
+	<!--<uses-permission android:name="android.permission.CALL_PHONE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
+	
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" ></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" ></uses-permission>
+ 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  	<uses-permission android:name="android.permission.GET_TASKS"/>
+  	<uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.camera"></uses-feature>
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
+
+    <!-- GCM 관련 퍼미션 -->
+	<permission android:name="annie.kiz.view.technotown.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name="annie.kiz.view.technotown.permission.C2D_MESSAGE" />
+	<!-- GCM 받기 -->
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<!-- GCM을 받으려면 구글 계정 필요 -->
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<!-- 메시지 받을 때 wake up 하기 위해 -->
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<!-- 네트워크 접속 권한 -->
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    
+</manifest>
